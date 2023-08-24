@@ -1,0 +1,25 @@
+package com.java14.feature3;
+
+public class Records {
+	
+	// bydefault record object final
+	record User(String username, String password) {}
+	
+
+	public static void main(String[] args) {
+		
+		User user = new User("ingleajay","Pass@123");
+		System.out.println("Username  : " + user.username);
+		System.out.println("Password : " + user.password);
+		System.out.println("+++++++++++++++++++++++++++++++++++++");
+		
+		OutsideRecord.Person person = new OutsideRecord.Person("ajay","ingle");
+		System.out.println("First Name : " + person.firstName());
+		System.out.println("Last Name : " + person.lastName());
+		
+		// check can we change data of record object
+		user.password = "Pass@1234";
+		
+	}
+
+}

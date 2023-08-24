@@ -1,0 +1,20 @@
+package com.java11.feature4;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+
+public class FileWriteAndReadString {
+
+	public static void main(String[] args) throws IOException {
+		
+		var path = "C:\\Users\\Sonali\\Desktop\\Ajay\\features\\JAVA Features\\src\\com\\java11\\feature4\\output.txt";
+		
+		Files.writeString(Path.of(path),"Codeouter has provided best resource for java",StandardOpenOption.WRITE);
+		
+		String data = Files.readString(Path.of(path));
+		System.out.println("Read from file : " + data);
+		
+	}
+}

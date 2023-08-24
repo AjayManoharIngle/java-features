@@ -1,0 +1,11 @@
+package com.java14.feature2;
+
+public class NullPointerEx {
+
+	public static void main(String[] args) {
+		int[] arr = null;
+		arr[0] = 1;
+		
+		System.out.println(arr[0]);
+	}
+}

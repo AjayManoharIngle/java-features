@@ -1,0 +1,13 @@
+package com.java15.feature4;
+
+public class PatternMatching {
+
+	public static void main(String[] args) {
+	
+		Integer no=110;
+		if(no instanceof Integer no && no > 1010) {
+			
+		}
+	}
+
+}

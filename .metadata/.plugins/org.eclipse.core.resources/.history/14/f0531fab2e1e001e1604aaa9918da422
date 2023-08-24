@@ -1,0 +1,35 @@
+package com.java12.feature1;
+
+public class NewString {
+
+	public static void main(String[] args) {
+		
+		
+		String str = "Codeuter is best resource.";
+		
+		System.out.println(transformMethod(str));
+		System.out.println(indentMethod(str));
+		
+		stringLiterals();
+	}
+
+	private static void stringLiterals() {
+		String html = "<html>"
+							+"<head>"
+							+"</head>"
+							+"<title>"
+							+"</title>";
+		
+		System.out.println(html);
+						
+	}
+
+	private static String indentMethod(String str) {
+		return str.indent(4);
+	}
+
+	private static String transformMethod(String str) {
+		return str.transform(p -> p.replace("is","was"));
+	}
+
+}

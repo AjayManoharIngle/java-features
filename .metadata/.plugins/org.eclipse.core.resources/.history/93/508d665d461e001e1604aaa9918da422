@@ -1,0 +1,10 @@
+package com.java13.feature1;
+
+public class SwitchExpression {
+
+	public static void main(String[] args) {
+		
+		// added yield keyword instead of lambda expression
+		
+	}
+}

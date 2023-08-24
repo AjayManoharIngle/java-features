@@ -1,0 +1,24 @@
+package com.java12.feature2;
+
+public class NewString {
+
+	public static void main(String[] args) {
+		
+		
+		String str = "Codeuter is best resource.";
+		
+		System.out.println(transformMethod(str));
+		System.out.println(indentMethod(str));
+		
+	}				
+	
+
+	private static String indentMethod(String str) {
+		return str.indent(4);
+	}
+
+	private static String transformMethod(String str) {
+		return str.transform(p -> p.replace("is","was"));
+	}
+
+}

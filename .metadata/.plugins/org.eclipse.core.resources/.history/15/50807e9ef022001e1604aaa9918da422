@@ -1,0 +1,36 @@
+package com.java16.feature3;
+
+import java.util.Arrays;
+
+public class VectorAPIIncubator {
+
+	public static void main(String[] args) {
+		
+		// if multiple two arrays then it will 4 cycles but what i have to do in 1 cycle
+		
+		int a[] = {1,2,3};
+		int b[] = {4,5,6};
+		
+		traditionalWay(a,b);
+		
+		vectorAPIWay(a,b);
+	}
+
+	private static void vectorAPIWay(int[] a, int[] b) {
+		// run java VectorAPIIncubator.java --add-modules jdk.incubator.vector
+		// run =java VectorAPIIncubator.java --add-modules jdk.incubator.vector
+		var vectorA = IntVector.fromArray(IntVector.SPECIES_128, a, 0);
+		var vectorB = IntVector.fromArray(IntVector.SPECIES_128, b, 0);
+		var vectorC = vectorA.mul(vectorB);
+		vectorC.intoArray(c, 0);
+	}
+
+	private static void traditionalWay(int[] a, int[] b) {
+		int d[] = new int[a.length];
+		for(int i=0;i<a.length && i<b.length;i++) {
+			d[i] = a[i]*b[i];
+		}
+		System.out.println(Arrays.toString(d));
+	}
+
+}

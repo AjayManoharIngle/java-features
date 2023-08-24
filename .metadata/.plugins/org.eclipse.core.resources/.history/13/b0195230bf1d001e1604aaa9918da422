@@ -1,0 +1,18 @@
+package com.java12.feature1;
+
+public class SwitchExpression {
+
+	public static void main(String[] args) {
+		
+		traditional();
+		newFeature();
+	}
+
+	private static void newFeature() {
+		
+	}
+
+	private static void traditional() {
+		
+	}
+}

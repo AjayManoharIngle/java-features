@@ -1,0 +1,30 @@
+package com.java16.feature1;
+
+import java.time.LocalTime;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DatePeroidSupport {
+	
+	//zonedDateTime Date/time that will be written to standard output
+	 //and will include hour, day period, and zone details.
+
+	public static void main(String[] args) {
+		
+		// B = short, BBB = full, BBBBB = narrow
+		// we will get to know details of peroid
+		LocalTime date = LocalTime.parse("15:25:08.690791");
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("h BBBBB");
+		System.out.println(date.format(formatter));
+		
+		
+		
+	}
+	
+	public String printHourDayPeriodAndZone(final ZonedDateTime zonedDateTime)
+	{
+	   final String dateTimeStr
+	      = DateTimeFormatter.ofPattern("hh B, zzzz").format(zonedDateTime);
+	   return dateTimeStr;
+	}
+}

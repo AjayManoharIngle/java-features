@@ -1,0 +1,22 @@
+package com.java13.feature1;
+
+public class SwitchExpression {
+
+	public static void main(String[] args) {
+		
+		// added yield keyword instead of lambda expression
+		System.out.println(java12Feature());
+	}
+
+	private static String java12Feature() {
+		String data="MON";
+		
+		return switch(data) {
+		
+		case "MON","TUE","WED","THUR","FRI"->"WeekDays : " + data;
+
+		case "SAT","SUN"->"Weekend : " + data;
+		default -> "";
+		};
+	}
+}

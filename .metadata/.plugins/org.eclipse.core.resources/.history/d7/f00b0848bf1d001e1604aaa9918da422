@@ -1,0 +1,29 @@
+package com.java12.feature1;
+
+public class SwitchExpression {
+
+	public static void main(String[] args) {
+		
+		traditional();
+		newFeature();
+	}
+
+	private static void newFeature() {
+		
+		String data = "MON";
+		
+		switch (data) {
+		case "MON": ;
+		case "TUE":;
+		case "WED":;
+		case "THUR":;
+		case "FRI":System.out.println("Weekdays..");
+		case "SAT":;
+		case "SUN":System.out.println("Weekend...");
+		default:System.out.println("INVALID...");
+	}
+
+	private static void traditional() {
+		
+	}
+}

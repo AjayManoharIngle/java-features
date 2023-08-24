@@ -1,0 +1,18 @@
+package com.java16.feature4;
+
+public class Records {
+	
+	public record Book(String title, String author, String isbn) {
+	}
+	
+	class Student{
+		Book book = new Book("ajay","fhfh","fhfhfh");
+	}
+
+	public static void main(String[] args) {
+		
+		Student stu = new Student();
+		System.out.println(stu.book);
+	}
+
+}

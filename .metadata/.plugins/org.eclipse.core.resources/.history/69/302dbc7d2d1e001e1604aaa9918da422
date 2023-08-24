@@ -1,0 +1,10 @@
+package com.java12.feature1;
+
+public class NewString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

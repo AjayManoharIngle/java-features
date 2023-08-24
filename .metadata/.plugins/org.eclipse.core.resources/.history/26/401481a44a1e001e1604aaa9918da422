@@ -1,0 +1,18 @@
+package com.java14.feature1;
+
+public class TextBlocks {
+
+	public static void main(String[] args) {
+	
+		// Add \ and \s for more readablities of code 
+		// \: to indicate the end of the line, so that a new line character is not introduced
+		// \s: to indicate a single space
+		
+		String str = """
+			    A quick brown fox jumps over a lazy dog; \
+			    the lazy dog howls loudly.""";
+		
+		System.out.println(str);
+	}
+
+}

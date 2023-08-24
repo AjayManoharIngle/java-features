@@ -1,0 +1,15 @@
+package com.java11.feature5;
+
+import java.util.Optional;
+
+public class OptionalIsEmpty {
+
+	public static void main(String[] args) {
+		
+		// Object is empty or not
+		
+		Optional<String> str = Optional.of("");
+		str=str.empty()
+		System.out.println("Check strin is empty : " + str.isEmpty());
+	}
+}

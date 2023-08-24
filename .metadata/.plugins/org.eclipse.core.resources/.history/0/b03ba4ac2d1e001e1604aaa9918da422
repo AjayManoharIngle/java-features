@@ -1,0 +1,12 @@
+package com.java12.feature1;
+
+public class NewString {
+
+	public static void main(String[] args) {
+		
+		String str = "Codeuter is best resource.";
+		str=str.indent(4);
+		System.out.println(str);
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.java11.feature4;
+
+public class NestBasedAccessControl {
+
+	public static void main(String[] args) {
+		
+		PrivateMembers.
+	}
+
+}

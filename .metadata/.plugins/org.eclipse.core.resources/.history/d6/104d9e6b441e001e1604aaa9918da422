@@ -1,0 +1,25 @@
+package com.java12.feature4;
+
+public class PatternMatchingForInstanceOf {
+
+	public static void main(String[] args) {
+		Object obj = "Hello World!";
+		traditional(obj);
+		newWay(obj);
+	}
+
+	private static void newWay() {
+		if (obj instanceof String s) {
+		    int length = s.length();
+		}
+	}
+
+	private static void traditional() {
+		if (obj instanceof String) {
+		    String s = (String) obj;
+		    int length = s.length();
+		    System.out.println(length);
+		}
+	}
+
+}

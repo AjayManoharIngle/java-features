@@ -1,0 +1,38 @@
+package com.java15.feature1;
+
+// intially
+//class Person{}
+//
+//class Empolyee extends Person{}
+//
+//class Student extends Person{}
+//
+//class Animal extends Person{}
+
+// Here Animal class will not be person as we know so by code it's correct
+// but by OOPS concept is wrong so here we want Animal should extend Person class
+// To acheive this we can use sealed keyword with Permit
+
+// After chnage
+sealed class Person permits Empolyee,Student{}
+
+// if you make parent class as sealed then sub class can be sealed or non-sealed 
+
+non-sealed class Empolyee extends Person{}
+
+non-sealed class Student extends Person{}
+
+// Animal class is not allowed to extend Person class
+
+//final class Animal extends Person{}
+
+public class SealedUse {
+
+	// this is used when you want to make class or abstract class or interface as sealed means 
+	// you want that class or interface should not be used by other class or interface
+	
+	// class extendes class
+	
+	
+	
+}

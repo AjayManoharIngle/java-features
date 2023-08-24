@@ -1,0 +1,35 @@
+package com.java16.feature1;
+
+import java.time.LocalTime;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DatePeroidSupport {
+	
+	//zonedDateTime Date/time that will be written to standard output
+	 //and will include hour, day period, and zone details.
+
+	public static void main(String[] args) {
+		
+		// Note that the “B” is used in the pattern to specify that a day period is to be used.
+		// B = short, BBB = full, BBBBB = narrow
+		// we will get to know details of peroid
+		
+		print
+		
+	}
+	
+	public static void printCurrentDayPeriod()
+	{
+	   final String currentDayPeriodStr
+	      = DateTimeFormatter.ofPattern("B").format(LocalTime.now());
+	   System.out.println(currentDayPeriodStr);
+	}
+	
+	public String printHourDayPeriodAndZone(final ZonedDateTime zonedDateTime)
+	{
+	   final String dateTimeStr
+	      = DateTimeFormatter.ofPattern("hh B, zzzz").format(zonedDateTime);
+	   return dateTimeStr;
+	}
+}

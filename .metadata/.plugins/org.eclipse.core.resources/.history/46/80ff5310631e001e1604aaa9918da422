@@ -1,0 +1,15 @@
+package com.java14.feature4;
+
+public class SwitchExpression {
+
+	public static void main(String[] args) {
+		
+		System.out.println(java13feature());
+		System.out.println(java14feature());
+	}
+
+	private static char[] java13feature() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
